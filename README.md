@@ -20,8 +20,7 @@
 * Register
 ![alt text](https://github.com/Rishikesh-12/SmartBrain/blob/master/images/register.png)
 * Home
-![alt text](https://github.com/Rishikesh-12/SmartBrain/blob/master/images/1.png)
-![alt text](https://github.com/Rishikesh-12/SmartBrain/blob/master/images/2.png)
+![alt text](https://github.com/Rishikesh-12/SmartBrain/blob/master/images/projectsb.png)
 ![alt text](https://github.com/Rishikesh-12/SmartBrain/blob/master/images/3.png)
 
 ### To use this :-
