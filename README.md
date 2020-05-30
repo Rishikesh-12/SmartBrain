@@ -21,8 +21,6 @@
 ![alt text](https://github.com/Rishikesh-12/SmartBrain/blob/master/images/2.png)
 ![alt text](https://github.com/Rishikesh-12/SmartBrain/blob/master/images/3.png)
 
-
---------------------------
 ### To use this :-
 * Clone this repo
 * npm install
