@@ -13,13 +13,13 @@
 -----------
 ### Here are some examples:-
 * Sign in
-![alt text](https://github.com/Rishikesh-12/SmartBrain/blob/master/images/signin.png "SignIn Page")
+![alt text](https://github.com/Rishikesh-12/SmartBrain/blob/master/images/signin.png)
 * Register
-![alt text](https://github.com/Rishikesh-12/SmartBrain/blob/master/images/register.png "Register Page")
+![alt text](https://github.com/Rishikesh-12/SmartBrain/blob/master/images/register.png)
 * Home
-![alt text](https://github.com/Rishikesh-12/SmartBrain/blob/master/images/1.png "1")
-![alt text](https://github.com/Rishikesh-12/SmartBrain/blob/master/images/2.png "2")
-![alt text](https://github.com/Rishikesh-12/SmartBrain/blob/master/images/3.png "3")
+![alt text](https://github.com/Rishikesh-12/SmartBrain/blob/master/images/1.png)
+![alt text](https://github.com/Rishikesh-12/SmartBrain/blob/master/images/2.png)
+![alt text](https://github.com/Rishikesh-12/SmartBrain/blob/master/images/3.png)
 
 --------------------------
 ### To use this :-
