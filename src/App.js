@@ -13,7 +13,7 @@ const particlesOptions={
 
   "particles": {
     "number": {
-        "value": 60,
+        "value": 80,
         "density": {
             "enable": false
         }
@@ -23,7 +23,7 @@ const particlesOptions={
         "random": true
     },
     "move": {
-        "direction": "right",
+        "direction": "left",
         "out_mode": "out"
     },
     "line_linked": {
