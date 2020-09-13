@@ -1,0 +1,33 @@
+import type { IParticles } from "../../Interfaces/Particles/IParticles";
+import { OptionsColor } from "./OptionsColor";
+import { LineLinked } from "./LineLinked/LineLinked";
+import { Move } from "./Move";
+import { ParticlesNumber } from "./ParticlesNumber";
+import { Opacity } from "./Opacity/Opacity";
+import { Shape } from "./Shape/Shape";
+import { Size } from "./Size/Size";
+import { Rotate } from "./Rotate/Rotate";
+import type { RecursivePartial } from "../../../Types/RecursivePartial";
+import { Shadow } from "./Shadow";
+import type { SingleOrMultiple } from "../../../Types/SingleOrMultiple";
+import { Stroke } from "./Stroke";
+import { Collisions } from "./Collisions";
+import { Twinkle } from "./Twinkle/Twinkle";
+export declare class Particles implements IParticles {
+    get line_linked(): LineLinked;
+    set line_linked(value: LineLinked);
+    collisions: Collisions;
+    color: SingleOrMultiple<OptionsColor>;
+    lineLinked: LineLinked;
+    move: Move;
+    number: ParticlesNumber;
+    opacity: Opacity;
+    rotate: Rotate;
+    shape: Shape;
+    size: Size;
+    shadow: Shadow;
+    stroke: SingleOrMultiple<Stroke>;
+    twinkle: Twinkle;
+    constructor();
+    load(data?: RecursivePartial<IParticles>): void;
+}

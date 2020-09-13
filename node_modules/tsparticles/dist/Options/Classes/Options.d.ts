@@ -1,0 +1,32 @@
+import type { IOptions } from "../Interfaces/IOptions";
+import { Interactivity } from "./Interactivity/Interactivity";
+import { Particles } from "./Particles/Particles";
+import { PolygonMask } from "./PolygonMask/PolygonMask";
+import { BackgroundMask } from "./BackgroundMask/BackgroundMask";
+import type { RecursivePartial } from "../../Types/RecursivePartial";
+import { Background } from "./Background/Background";
+import type { SingleOrMultiple } from "../../Types/SingleOrMultiple";
+import { Emitter } from "./Emitters/Emitter";
+import { Absorber } from "./Absorbers/Absorber";
+import { Infection } from "./Infection/Infection";
+export declare class Options implements IOptions {
+    get fps_limit(): number;
+    set fps_limit(value: number);
+    get retina_detect(): boolean;
+    set retina_detect(value: boolean);
+    absorbers: SingleOrMultiple<Absorber>;
+    background: Background;
+    backgroundMask: BackgroundMask;
+    detectRetina: boolean;
+    emitters: SingleOrMultiple<Emitter>;
+    fpsLimit: number;
+    infection: Infection;
+    interactivity: Interactivity;
+    particles: Particles;
+    polygon: PolygonMask;
+    pauseOnBlur: boolean;
+    preset?: string | string[];
+    constructor();
+    load(data?: RecursivePartial<IOptions>): void;
+    private importPreset;
+}

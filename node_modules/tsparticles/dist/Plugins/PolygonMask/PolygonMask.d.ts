@@ -1,0 +1,37 @@
+import { Container } from "../../Core/Container";
+import type { ICoordinates } from "../../Core/Interfaces/ICoordinates";
+import { Particle } from "../../Core/Particle";
+import type { IDimension } from "../../Core/Interfaces/IDimension";
+import type { ISvgPath } from "../../Core/Interfaces/ISvgPath";
+import type { IContainerPlugin } from "../../Core/Interfaces/IContainerPlugin";
+export declare class PolygonMask implements IContainerPlugin {
+    redrawTimeout?: number;
+    raw?: ICoordinates[];
+    svg?: SVGSVGElement;
+    paths: ISvgPath[];
+    dimension: IDimension;
+    offset?: ICoordinates;
+    readonly path2DSupported: boolean;
+    private readonly container;
+    constructor(container: Container);
+    private static polygonBounce;
+    private static drawPolygonMask;
+    private static drawPolygonMaskPath;
+    checkInsidePolygon(position: ICoordinates | undefined): boolean;
+    resize(): void;
+    startAsync(): Promise<void>;
+    stop(): void;
+    randomPointInPolygon(): ICoordinates;
+    particlesInitialization(): boolean;
+    particlePosition(position?: ICoordinates): ICoordinates | undefined;
+    particleBounce(particle: Particle, _delta: number): boolean;
+    clickPositionValid(position: ICoordinates): boolean;
+    parseSvgPathToPolygon(svgUrl?: string): Promise<ICoordinates[] | undefined>;
+    draw(context: CanvasRenderingContext2D): void;
+    drawPointsOnPolygonPath(): void;
+    private getRandomPointOnPolygonPath;
+    private getRandomPointOnPolygonPathByLength;
+    private getEquidistantPointOnPolygonPathByIndex;
+    private getPointOnPolygonPathByIndex;
+    private createPath2D;
+}
